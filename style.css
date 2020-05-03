@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --red-color: hsl(0, 100%, 74%);
+  --green-color: hsl(154, 59%, 51%);
+  --blue-color: hsl(248, 32%, 49%);
+  --dark-color: hsl(249, 10%, 26%);
+  --grayish-color: hsl(246, 25%, 77%);
+  --poppins-font: "Poppins", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--poppins-font);
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: var(--red-color);
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 30px);
+  display: flex;
+  color: #fff;
+  align-items: center;
+  padding: 40px;
+}
+.main > div {
+  flex: 1;
+  padding: 0 20px;
+}
+.main-form {
+  color: var(--dark-color);
+}
+.main h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+.form-content {
+  background-color: #fff;
+  padding: 34px 38px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.form-banner {
+  padding: 16px 12px;
+  background-color: var(--blue-color);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.form-control {
+  margin-bottom: 15px;
+  width: 100%;
+}
+input {
+  padding: 15px 30px;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  border: 1.3px solid var(--grayish-color);
+}
+input:focus {
+  outline: none;
+  border: 1.3px solid var(--blue-color);
+}
+::placeholder {
+  font-weight: bold;
+}
+button {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--green-color);
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #5bb790;
+  border-bottom: 3px solid #5bb790;
+  font-weight: 500;
+  box-shadow: 0 2px var(--green-color);
+}
+button:hover {
+  outline: none;
+}
+button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 0 var(--green-color);
+}
+.terms-services {
+  display: block;
+  margin-top: 13px;
+  color: var(--grayish-color);
+  font-size: 11px;
+  text-align: center;
+}
+.terms-services a {
+  color: var(--red-color);
+  text-decoration: none;
+}
+footer {
+  color: white;
+}
+.attribution a {
+  color: white;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+}
