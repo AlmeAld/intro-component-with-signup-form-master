@@ -67,6 +67,7 @@ input {
   display: block;
   width: 100%;
   font-size: 15px;
+  font-family: var(--poppins-font);
   border-radius: 6px;
   border: none;
   font-weight: 500;
@@ -122,4 +123,33 @@ footer {
 /* Mobile responsive design */
 
 @media (max-width: 600px) {
+  .main {
+    width: 413px;
+    flex-direction: column;
+    padding: 25px 29px;
+  }
+
+  .main-text {
+    padding: 26px 0px;
+    margin: 18px 0;
+    text-align: center;
+  }
+
+  .main > div {
+    padding: 0;
+  }
+
+  .main h1 {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .form-banner {
+    padding: 16px 86px;
+  }
+
+  .form-content {
+    padding: 27px 29px;
+  }
 }

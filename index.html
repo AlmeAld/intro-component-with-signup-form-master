@@ -43,22 +43,33 @@
         <div class="form-content">
           <form action="">
             <div class="form-control">
-              <input type="text" placeholder="First Name" />
-              <small></small>
+              <input type="text" placeholder="First Name" id="fName" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small class="fName"></small>
             </div>
             <div class="form-control">
-              <input type="text" placeholder="Last Name" />
-              <small></small>
+              <input type="text" placeholder="Last Name" id="lName" />
+              <img src="./images/icon-error.svg" alt="" />
+
+              <small class="lName"></small>
             </div>
             <div class="form-control">
-              <input type="text" placeholder="Email Address" />
-              <small></small>
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                required
+              />
+              <img src="./images/icon-error.svg" alt="" />
+
+              <small class="email"></small>
             </div>
             <div class="form-control">
-              <input type="text" placeholder="Password" />
-              <small></small>
+              <input type="text" placeholder="Password" id="password" />
+              <img src="./images/icon-error.svg" alt="" />
+              <small class="password"></small>
             </div>
-            <button>Claim your free trial</button>
+            <button class="btnSend">Claim your free trial</button>
             <small class="terms-services">
               By clicking the button, you are agreeing to our
               <a href="">Terms and Services</a>
@@ -67,7 +78,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -75,6 +86,7 @@
         >. Coded by <a href="https://github.com/AlmeAld">Almendra Aldana</a> &
         <a href="https://github.com/paulclindo">Paul Ccari</a> .
       </p>
-    </footer>
+    </footer> -->
+    <script src="index.js" type="module"></script>
   </body>
 </html>
