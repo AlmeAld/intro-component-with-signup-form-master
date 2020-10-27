@@ -59,8 +59,25 @@ body {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.35);
 }
 .form-control {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   width: 100%;
+  text-align: right;
+  position: relative;
+}
+.form-control img {
+  position: absolute;
+  bottom: 16px;
+  right: 30px;
+  opacity: 0;
+}
+.small {
+  position: absolute;
+  bottom: -20px;
+  font-weight: 600;
+  right: 0;
+  font-size: 12px;
+  color: var(--red-color);
+  opacity: 0;
 }
 input {
   padding: 15px 30px;
@@ -80,18 +97,20 @@ input:focus {
 ::placeholder {
   font-weight: bold;
 }
+
 button {
   width: 100%;
   padding: 20px 30px;
   font-size: 1rem;
-  border: none;
   cursor: pointer;
   background-color: var(--green-color);
+  border: none;
+  outline: none;
   border-radius: 6px;
   color: white;
   text-transform: uppercase;
   border: 1px solid #5bb790;
-  border-bottom: 3px solid #5bb790;
+  border-bottom-width: 3px;
   font-weight: 500;
   box-shadow: 0 2px var(--green-color);
 }
